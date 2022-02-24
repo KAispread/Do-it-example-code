@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>연습문제 1</title>
+	<style>
+		ul {
+			list-style:none;
+		}
+		li {
+			line-height:50px;
+		}
+		label {
+			width:60px;
+			float:left;
+		}
+	</style>
+</head>
+<body>
+	<h1>예약 정보</h1>
+	<form>
+		<fieldset>
+			<ul>
+				<li>
+					<label for="name">이 름 </label>
+					<input id="name" type="text" minlength="4" maxlength="10" autofocus required>
+				</li>
+				<li>
+					<label for="tel">전 화 </label>
+					<input id="tel" type="tel" minlength="9" maxlength="20" required>
+				</li>
+				<li>
+					<label for="umail">이메일 </label>
+					<input id="umail" type="email" minlength="10" maxlength="30" required>
+				</li>
+			</ul>
+			<ul>
+				<li>
+					<label>숙박</label>
+					<input type="text" list="ocation">
+					<datalist id="ocation">
+						<option value="야놀자"></option>
+						<option value="호텔스컴바인"></option>
+					</datalist>
+				</li>
+			</ul>
+			<div>
+				<input type="submit" value="예약하기">
+			</div>
+		</fieldset>
+	</form>
+</body>
+</html>
