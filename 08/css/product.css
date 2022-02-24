@@ -1,0 +1,32 @@
+* {
+  text-align: center;
+}
+h2, h1{
+  color: brown;
+}
+table, th, td {
+  border:1px solid #ccc;
+  border-collapse: collapse;
+  caption-side: bottom;
+}
+th, td { 
+  padding:10px 20px; 
+}
+div{
+  margin: 5px;
+  padding: 20px;
+  border: 1px solid black;
+}
+#container{
+  width: 600px;
+  border: none;
+  margin: 20px auto;
+}
+#description{
+  border-top-left-radius: 10%;
+  border-top-right-radius: 10%;
+}
+#package{
+  border-bottom-left-radius: 10%;
+  border-bottom-right-radius: 10%;
+}
