@@ -16,7 +16,7 @@ body {
 	width: 400px;	
 	margin:30px auto;
 }
-		
+
 #signup fieldset {
 	border: 1px solid #ccc;
 	margin-bottom: 30px;
@@ -50,4 +50,20 @@ body {
 	float: left;  /* 왼쪽으로 배치 */
 	font-size: 13px;  /* 글자 크기 - 13px */
 	width: 110px;  /* 너비 - 110px */
+}
+
+#signup input[type = tel] , #signup input[type = text], #signup input[type = email], #signup input[type = password]{
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	font-size: 13px;
+	padding: 5px;
+	width: 200px;
+}
+
+#signup input[required] {  /* 필수 입력 필드의 스타일 */
+	border:1px red solid;  
+}
+
+#signup input[readonly] {  /* 읽기 전용 필드의 스타일 */
+	border:none;
 }

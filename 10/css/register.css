@@ -21,7 +21,13 @@ body {
 	border: 1px solid #ccc;
 	margin-bottom: 30px;
 }
-		
+
+#signup label{
+	float: left;
+	font-size: 13px;
+	width: 100px;
+}
+
 #signup legend {
 	font-size: 16px;
 	font-weight: bold;
