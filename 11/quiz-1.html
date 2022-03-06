@@ -1,47 +1,72 @@
 ﻿<!DOCTYPE HTML>
 <html lang="ko">
+
 <head>
   <meta charset="UTF-8">
-  <title>연습문제 1</title>  
+  <title>연습문제 1</title>
   <style>
     * {
       box-sizing: border-box;
     }
+
     .top-menu {
-      margin:50px auto;
-      padding:0;
-      list-style:none;
-      width:605px;
-      height:35px;
-      box-shadow:0 3px 4px #8b8b8b;
-      background-color:#dadada;
+      margin: 50px auto;
+      padding: 0;
+      list-style: none;
+      width: 605px;
+      height: 35px;
+      box-shadow: 0 3px 4px #8b8b8b;
+      background-color: #dadada;
+      transition: all 0.5s ease-in;
     }
+
     .top-menu li {
-      float:left;
-      border-right:1px solid #929292;
+      float: left;
+      border-right: 1px solid #929292;
     }
-    .top-menu li a:link{
-      color:black;
-      text-decoration:none;
-      text-align:center;
-      display:block;
-      width:100px;
-      height:35px;
+
+    .top-menu li a:link {
+      color: black;
+      text-decoration: none;
+      text-align: center;
+      display: block;
+      width: 100px;
+      height: 35px;
       line-height: 35px;
     }
+
     .top-menu li:last-child {
-      border-right:none;      
+      border-right: none;
     }
+
+    .top-menu li a {
+      transition: all 0.5s ease-in;
+    }
+
     .top-menu li:not(:last-child) a:hover {
-      background-color:#555;
-      color:#fff;
+      background-color: #555;
+      color: #fff;
+      /* animation: menu_color_transision 1s; */
     }
+
     .top-menu Li:last-child a:hover {
-      background-color:#b30000;
-      color:#fff;
+      background-color: #b30000;
+      color: #fff;
     }
+
+    /* @keyframes menu_color_transision{
+      from{
+        background-color:#dadada;
+        color:black;
+      }
+      to{
+        background-color:#555;
+        color:#fff;
+      }
+    } */
   </style>
 </head>
+
 <body>
   <nav>
     <ul class="top-menu">
@@ -54,4 +79,5 @@
     </ul>
   </nav>
 </body>
+
 </html>
