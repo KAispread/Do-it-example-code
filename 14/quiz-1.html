@@ -1,15 +1,27 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>연습문제 1</title>
 </head>
+
 <body>
 	<h2>4의 배수일까 아닐까</h2>
 
 	<script>
-	
+		var Input_Num = prompt("숫자를 입력하세요.");
+
+		if (Input_Num !== null) {
+			if (Input_Num % 4 == 0) {
+				document.write(Input_Num + "은 4의 배수입니다.");
+			}
+			else {
+				document.write(Input_Num + "은 4의 배수가 아닙니다.");
+			}
+		}
 	</script>
 </body>
+
 </html>
