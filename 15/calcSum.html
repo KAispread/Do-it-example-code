@@ -6,6 +6,21 @@
 	<title>1부터 n까지 더하기</title>
 </head>
 <body>
+	<script>
+		var Argument_Number = prompt("1부터 n까지 더할 숫자 'n'을 입력하세요");
 
+		var result = function(num) {
+			var sum = 0;
+			for(let i = 1; i < (num + 1); i++){
+				sum += i;
+			}
+
+			return sum;
+		}
+
+		if (Argument_Number !== null){
+			document.write("1부터 " + Argument_Number + "까지 더한 값은 " + result(parseInt(Argument_Number)) + "입니다.");
+		}
+	</script>
 </body>
 </html>
