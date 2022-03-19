@@ -7,7 +7,18 @@
 </head>
 <body>
   <script>
+		var argu1 = prompt("숫자를 입력하세요 (1/2): ");
+		var argu2 = prompt("숫자를 입력하세요 (2/2): ");
 
+		var calc_result = function(x, y) {
+			let result = 0;
+
+			if(x !== null && y !== null){
+				if(x === y){ return x * y; }
+				else	{	return x + y; }
+			}
+		}
+		console.log(calc_result(parseInt(argu1), parseInt(argu2)));
   </script>
 </body>
 </html>
