@@ -6,6 +6,21 @@
 	<title>연습문제 2</title>
 </head>
 <body>
-	
+	<script>
+		var Input_number1 = prompt("비교할 첫 번째 숫자:");
+		var Input_number2 = prompt("비교할 두 번째 숫자:");
+		
+		(function(num1, num2){
+			if(num1 > num2){
+				alert(num1 + "(이)가 " + num2 + "보다 큽니다.");
+			}
+			else if(num1 < num2) {
+				alert(num2 + "(이)가 " + num1 + "보다 큽니다.");
+			}
+			else {
+				alert(num1 + "(과)와 " + num2 + "(이)가 같습니다.");
+			}
+		}(parseInt(Input_number1), parseInt(Input_number2)))
+	</script>
 </body>
 </html>
