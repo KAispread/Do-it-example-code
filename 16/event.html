@@ -14,5 +14,14 @@
   </head>
   <body>    
     <h1>당첨자 발표</h1>
+    <p>전체 응모자 수 : <span id="seed"></span> 명</p>
+    <p>당첨자 : <span id="pick"></span> 번</p>
+    <script>
+      var seed = parseInt(prompt("전체 응모자 수:"));
+      let picked = Math.floor(Math.random() * seed + 1);
+
+      document.querySelector("#seed").innerText = seed;
+      document.querySelector("#pick").innerText = picked;
+    </script>
   </body>
 </html>

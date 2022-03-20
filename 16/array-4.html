@@ -25,7 +25,10 @@
     // 인수가 3개 이상일 경우
     var newStudy2 = study.splice(2, 1, "js");
     document.write("반환된 배열 : " + newStudy2 + "<br>");
-    document.write("변경된 배열 : " + study);
+    document.write("변경된 배열 : " + study + "<br>");
+    for(let i = 0; i < study.length; i++){
+      document.write(study[i] + "/" + "\t");
+    }
 	</script>
 </body>
 </html>
