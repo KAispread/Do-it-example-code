@@ -14,7 +14,11 @@
 <body>
 	<script>
 		var now = new Date();
+		var arr = new Array("a","b","c");
 		document.write("현재 시각은 " + now.toLocaleString()) ;	// 로컬 형식으로 표시하기
+		for(let i = 0; i < arr.length; i++){
+			document.write(arr[i] + "\t");
+		}
 	</script>
 </body>
 </html>
