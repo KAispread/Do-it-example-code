@@ -17,16 +17,36 @@
 <body>
   <div id="container">    
     <h1>DOM을 공부합시다</h1>
-    <a href="#" onclick="addP(); this.onclick='';">더 보기</a>    
-    <div id="info"></div>
+    <a href="#"  onclick="addP(); this.onclick=''; ">더 보기</a>    
+    <div id="info">
+    </div>
   </div>
   <script>
     function addP() {
-      var newP = document.createElement("p");
-      var txtNode = document.createTextNode("DOM은 Document Object Model의 줄임말입니다.");
-      newP.appendChild(txtNode);
-      document.getElementById("info").appendChild(newP);
+      let elemt = document.createElement("p");
+      elemt.setAttribute("id", "added");
+      let txt = document.createTextNode("Dom은 document object model의 준말입니다.");
+
+      elemt.appendChild(txt);
+      
+      // //Example - 1
+      // let imgFile = document.createElement("img");
+      // imgFile.setAttribute("src", "images/dom.jpg");
+      // imgFile.setAttribute("alt", "Example Image");
+
+      //Example - 2
+      let imgFile = document.createElement("img");
+      let srcAttr = document.createAttribute("src");
+      let altAttr = document.createAttribute("alt");
+      srcAttr.value = "images/dom.jpg";
+      altAttr.value = "Example";
+      imgFile.setAttributeNode(srcAttr);
+      imgFile.setAttributeNode(altAttr);
+
+      document.querySelector("#info").appendChild(elemt);
+      document.querySelector("#info").appendChild(imgFile);
     }
+    
   </script>
 </body>
 </html>

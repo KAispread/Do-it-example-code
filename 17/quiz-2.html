@@ -4,8 +4,50 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>연습문제 2</title>
+	<style>
+		table ,td {
+			border: 1px solid red;
+			border-collapse: collapse;
+		}
+		td {
+			padding: 10px;
+		}
+	</style>
 </head>
 <body>
-	
+	<form action="">
+		<input type="text" id="row">행
+		<input type="text" id="column">열
+		<button onclick="addTable(); return false">작성</button>
+		<div id="Table"></div>
+	</form>
+	<script>
+		function addTable (){
+			let table_main = document.createElement("table");
+			let table_location = document.querySelector("#Table");
+
+			let get_rowData = document.querySelector("#row");
+			let get_colData = document.querySelector("#column");
+			let rowData = get_rowData.value;
+			let colData = get_colData.value;
+
+			for(let i = 0; i < rowData; i++){
+				let table_row = document.createElement("tr");
+				for(let a = 0; a < colData; a++){
+					let table_data = document.createElement("td");
+					let txt = document.createTextNode(`${i}, ${a}`);
+					table_data.appendChild(txt);
+
+					table_row.appendChild(table_data);
+				}
+				table_main.appendChild(table_row);
+			}
+			
+			table_location.appendChild(table_main);
+
+			get_rowData.value = "";
+			get_colData.value = "";
+		}
+	</script>
 </body>
 </html>
